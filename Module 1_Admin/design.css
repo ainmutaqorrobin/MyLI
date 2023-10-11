@@ -1,0 +1,151 @@
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding :7px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 30px;
+}
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #508585;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Border */
+h2.solid {
+  border-style: solid;
+  text-align: center;
+}
+
+input {
+  font-size: larger;
+  font-style: bold;
+}
+
+#komen {
+  width: 1750px;
+  height: 200px;
+  margin-top: 5px;
+}
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+p.dashed {
+  border-style: dashed;
+  text-align: center;
+  padding: 50px;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  border: 2px #4caf50;
+}
+td {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+th.a {
+  background: #1abc9c;
+}
+td.a {
+  background: #1abc9c;
+}
+td.b {
+  background: #1abc9c;
+}
+td.c {
+  background: #1abc9c;
+}
+tr {
+  background: #1abc9c;
+}
+
+b.a {
+  background: #1abc9c;
+}
+b.b {
+  color: white;
+}
+b.c {
+  color: white;
+}
+b.d {
+  color: white;
+}
+
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Myriad Pro Light;
+  margin: 20px 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  margin-left: 100px;
+}
+
+.news {
+  font-size: 100px;
+  font-weight: bold;
+  background-color: #1abc9c;
+}

@@ -1,0 +1,48 @@
+body {
+  background-color: #c6ecd9;
+  
+}
+.tajuk {
+  text-align: center;
+  font-family: Stencil;
+  font-size: 30px;
+  color: #1abc9c;
+}
+.logo {
+  text-align: center;
+}
+
+/* Style the login */
+.login {
+  margin-bottom: 10%;
+  margin-left: 23%;
+  position: fixed;
+  background: #1abc9c;
+  padding: 150px;
+}
+
+.userpass {
+  margin-left: 150px;
+  padding-left: 15%;
+}
+.kotak {
+  margin-top: -18px;
+  margin-left: 80px;
+}
+
+button {
+  width: 200px;
+  border-radius: 12px;
+  height: 30px;
+}
+
+.qr {
+ 
+}
+
+table,th,td{
+  margin-left: 150px;
+  border-spacing: 30px;
+  
+}
+

@@ -1,0 +1,152 @@
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #c6ecd9;
+}
+img{
+  width: 11.8%;
+  background-image: url("UMP.png");
+  height: 80px;
+  background-position: left;
+  position: fixed;
+
+}
+
+/* Header/logo Title */
+.header {
+  padding :7px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 23px;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  font-family: Stencil;
+  
+}
+
+h2{
+  text-align: center;
+  margin-left: 200px;
+  font-family: Segoe UI Black;
+}
+.button {
+  background-color: #508585;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Myriad Pro Light;
+  margin: 20px 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+}
+
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align:left;
+  font-family:Myriad Pro Light;
+
+}
+.uli {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  text-align:left;
+  font-family:Myriad Pro Light;
+
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #508585;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Border */
+h2.solid{
+	border-style:solid;
+	text-align:center;
+	
+}
+
+p.dashed{
+	border-style:dashed;
+	text-align:center;
+	padding:50px;
+}
+/*--eda punya*/
+
+/*content box*/
+.bgbox{
+  background-color: #c6ecd9;
+  padding-bottom: 20%;
+}
+.smallcolumn{
+  width: 125px;
+}
+table{
+  width: 100%;
+  text-align: center;
+}
+input{
+  width: 98%
+}
+textarea{
+  width: 98%;
+}
+table
+{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.add
+{
+  width: 1150px;
+  height: 100px;
+  border-radius: 12px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+   color:white;
+    background-color: #1abc9c;
+
+}
+
+

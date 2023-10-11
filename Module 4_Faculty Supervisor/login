@@ -1,0 +1,101 @@
+<?php
+
+$link = mysqli_connect("localhost","root") or die(mysqli_connect_error());
+mysqli_select_db($link, "sinfo") or die(mysqli_error());
+
+$error = "";
+
+if(isset($_POST['submit']))
+{
+
+  if(empty($_POST['username']) || empty($_POST['password']))
+  {
+    $error =  "Please enter the username and password";
+  }
+  else
+  {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+  
+    $sql = "SELECT * FROM login WHERE username = '".$username."' AND password = '".$password."' limit 1";
+  
+    $result = mysqli_query($link, $sql);
+  
+    if(mysqli_num_rows($result)==1){
+      header("location:Homepage.php");
+    }
+    else{
+      $error = "Invalid username or password";
+    }
+  }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+  <div class="tajuk">
+    <h2>UMP Internship Management System (MyLI)</h2>
+  </div>
+
+  <div class="border">
+  <div class="logo">
+    <br>
+      <img src="UMP.png" alt="Logo UMP">
+    </div>
+
+    <br><br>
+    <form method="POST" action="">
+      <div class="userpass">
+
+        <label for="Username"><b>Username</b></label>
+
+        <div class="kotak">
+          <input type="text" id="username" name="username">
+          <br><br>
+        </div>
+
+        <label for="password"><b>Password</b></label>
+        <div class="kotak">
+          <input type="password" id="password" name="password">       
+        </div>
+      </div>
+    <br>
+    <div class = "error">
+    <?php echo $error ?></div>
+    
+      <table>
+        
+        <tr>
+          <td>
+            <button onclick="myFunction()"><a href="admin.html">Log as Admin</a></button>
+            <br><br>
+            <button onclick="myFunction()">Log as Faculty Supervisor</button>
+           <br><br>
+              <button onclick="myFunction()">Log as Faculty Coordinator</button>
+           <br><br>
+              <button type="submit" name="submit">Log as Industry Supervisor</button>
+          <br><br>
+            <button onclick="myFunction()">Log as Internship Student</button>
+          </td>
+          <td>
+            <img src="qrcode.png" class="qr" alt="QR Code" style="width:200px;height:200px;">
+          </td>
+        </tr>      
+      </table>
+    </form>
+  </div>
+</div>
+
+
+
+</body>
+</html>

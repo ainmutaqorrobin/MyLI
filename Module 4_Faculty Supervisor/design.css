@@ -1,0 +1,245 @@
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #c6ecd9;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  font-family: Stencil;
+
+}
+
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align:left;
+  font-family:Myriad Pro Light;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #508585;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Border */
+h2.solid{
+	border-style:solid;
+	text-align:center;
+  margin-top:5px;	
+  margin-left: -50px;
+  background-color: #c6ecd9;
+  color: black;
+}
+
+p.dashed{
+	border-style:dashed;
+	text-align:center;
+	padding:50px;
+}
+
+table,td,tr,input{
+  text-align: center;
+  height: 50px;
+  font-weight: bold;
+  margin-left: 440px;
+  border-collapse: collapse;
+  padding-top: 10px;
+
+}
+
+td.b{
+  width: 200px;
+}
+
+input{
+  width: 400px;
+  margin-left:0px;
+  box-shadow: 1px 1px 2px 1px grey;
+}
+
+input.a{
+  width:100px;
+  height: 30px; 
+  float: right;
+  margin-right: 500px;
+  margin-left:  -490px;
+  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+input.a:hover
+{
+  background-color: #008080;
+  font-size: 15px;
+}
+
+td.a{
+  width: 400px;
+  background-color: lightgrey;
+}
+td.c{
+  background-color: lightgrey;
+}
+
+button.b:hover{
+  border-radius: 5px;
+  width: 35%;
+  transition: 0.5s;
+  background-color: #008080;
+  font-size: 20px;
+}
+
+img
+{
+    width: 12.4%;
+    background-image: url("UMP.png");
+    height: 80px;
+    background-position: left;
+    float: left;
+    margin-top: -80px;
+    margin-left: 40px;
+}
+
+button.b{
+  border-radius: 5px;
+}
+
+button.a{
+  border-radius:7px;
+  width: 130px;
+  height: 50px;
+  font-size: 16px;
+
+}
+
+button.a:hover{
+  border-radius: 5px;
+  width: 150px;
+  transition: 0.5s;
+  background-color: #008080;
+  font-size: 20px;
+  padding-right: -20px;
+}
+
+button.c{
+  border-radius:7px;
+  width: 130px;
+  height: 50px;
+  font-size: 16px;
+}
+
+button.c:hover{
+  border-radius: 5px;
+  width: 150px;
+  transition: 0.5s;
+  background-color: #008080;
+  font-size: 20px;
+  padding-right: -20px;
+}
+ div.a{
+  margin-left: 210px;
+ }
+
+button.d{
+  border-radius:7px;
+  width: 130px;
+  height: 50px;
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+button.d:hover{
+  border-radius: 5px;
+  width: 150px;
+  transition: 0.5s;
+  background-color: #008080;
+  font-size: 20px;
+  padding-right: -20px;
+}
+
+div.a{
+  margin-top: -30px;
+  margin-left: -500px;
+}
+
+button.e{
+  border-radius:7px;
+  width: 75%;
+  height: 50px;
+  font-size: 16px;
+  margin-top: -30px;
+  float: right;
+  margin-right: 40px;
+}
+
+button.e:hover{
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: #008080;
+  font-size: 20px;
+  padding-right: -20px;
+}
+
+button.f{
+  border-radius:7px;
+  width: 75%;
+  height: 50px;
+  font-size: 16px;
+  margin-top: -100px;
+  float: right;
+  margin-right: 40px;
+}
+
+button.f:hover{
+ border-radius: 5px;
+  transition: 0.5s;
+  background-color: #008080;
+  font-size: 20px;
+  padding-right: -20px;
+}
+
+@page
+{
+  size: A4;
+  margin: 0;
+}
+
+#print-btn
+{
+  display: none;
+  visibility: none;
+}
